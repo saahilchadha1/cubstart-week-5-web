@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="shortcut icon" href="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/favicon.ico">
+
+    <link rel="stylesheet" href="songGenerator.css">
+
+    <!-- For responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Song Generator</title>
+  </head>
+
+  <body>
+    <!-- Splash (top of page) -->
+    <div id="splash">
+      <a href="https://calhacks.io/"><img id="logo" src="./Cubstart_files/logo.png"></a>
+
+      <!-- Splash body -->
+      <div id="splash-body">
+        <div id="splash-combo-title">
+          <img src="./Cubstart_files/cubstart.png">
+          <h1>Random Song Generator</h1>
+        </div>
+      </div>
+
+      <!-- Background -->
+      <div id="splash-background"></div>
+
+    </div>
+    <div id="content">
+        <h2>
+            Random Song Generator
+        </h2>
+        <p>
+        In this exercise, you'll create a simple website that displays random songs and album covers. 
+        </p>
+        <div class="content-section" id="main">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="name">Number of Songs</label>
+            <input type="number" id="num-songs">
+            <button class="dark" id="submit"> Submit </button>
+            <p id="greeting" hidden>Greeting message</p>
+            <p id="error" hidden>Error message</p>
+        </div>
+        <div id="albums">
+            <div id="album-content">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="songGenerator.js"> </script>
+  </body>
+</html>

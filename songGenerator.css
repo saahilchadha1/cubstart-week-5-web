@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  font-family: Muli;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p, li, code {
+  font-weight: normal;
+}
+
+a {
+  color: #3d9bc2;
+  text-decoration: none;
+}
+
+i {
+  font-weight: normal;
+}
+
+code {
+  color: #3d9bc2;
+  background-color: #f1f1f1;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+button {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  height: 2.5rem;
+  font-size: 16px;
+  color: #3d9bc2;
+  background: white;
+  border-radius: 0.75rem;
+  border: none;
+  box-shadow: 0px 3px 0px #72c8e3;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button.dark, #submit {
+  background: #3d9bc2;
+  color: white;
+}
+
+li.demo--hover:hover {
+  background-color: orange;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input {
+  margin-right: 2rem;
+}
+
+#num-songs {
+  width: 4rem;
+}
+
+#error {
+  color:red;
+}
+
+
+#splash {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#splash #logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 5rem;
+}
+#splash #splash-body #splash-combo-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#splash #splash-background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 90%;
+  width: 100%;
+  background: url("./Cubstart_files/background.svg");
+  background-size: 100% 100%;
+}
+#splash #splash-body {
+  flex-direction: column;
+  width: 50%;
+  max-width: 450px;
+  text-align: center;
+}
+#splash #splash-body #splash-combo-title img {
+  height: 15rem;
+  margin: -2rem;
+  margin-top: -4rem;
+}
+
+#content {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 20rem;
+}
+#content #words #words-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#content #words #words-body p,
+#content #words #words-body img {
+  width: calc(50% - 1rem);
+}
+#content #faq #faq-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#content #faq #faq-columns .faq-column {
+  width: calc((100% - 4rem) / 2);
+}
+#content #faq #faq-columns .faq-column .faq-section h4 {
+  margin-bottom: 0;
+}
+#content #albums {
+  display: grid;
+  grid-template-columns: calc((100% - 6rem) / 4) calc((100% - 6rem) / 4) calc((100% - 6rem) / 4) calc((100% - 6rem) / 4);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+#content #albums .album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#content #albums .album img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+#content #questions {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#content #questions h2 {
+  margin-bottom: 0.5rem;
+}
+#content .content-section {
+  margin-bottom: 2rem;
+}
+#content .content-section h2 {
+  color: #3d9bc2;
+}
+#content .content-section h2,
+#content .content-section h4,
+#content .content-section p {
+  margin-bottom: 0.5rem;
+}
+#content .content-section h4 {
+  margin-top: 1rem;
+}
